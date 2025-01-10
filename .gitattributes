@@ -1,2 +1,25 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=auto eol=lf
+
+# Docker files
+Dockerfile text
+docker-compose.yml text
+*.sh text eol=lf
+
+# Source code
+*.ts text
+*.tsx text
+*.js text
+*.json text
+*.css text
+*.scss text
+*.html text
+*.md text
+*.prisma text
+
+# Images should be treated as binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg text
